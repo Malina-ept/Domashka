@@ -6,10 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="model" />
+        <module name="Domashka" />
         <module name="test-junit" />
         <module name="test-testng" />
-        <module name="model" />
+        <module name="java.base" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Domashka" options="" />
+    </option>
   </component>
 </project>
